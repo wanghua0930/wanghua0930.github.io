@@ -8,16 +8,102 @@
         /* css */
         body {
             font-family: Arial, sans-serif;
-            background-color: #ff0000;
+            background-color: #ff5500;
             color:#ffffff;
             margin:0px;
             padding:30px;
             text-align: center;
         }
+        button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #FFFFFF;
+            color: #ff0000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;}
+        #openMapButton {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;              
+        }
+        #imgDiv{
+            position:absolute;
+            
+            left: 50%;
+            margin-left: -75px;
+
+            top: 50%;
+            margin-top: -100px;
+            
+            
+            width: 150px;
+            height: 200px;
+            background-color: rgb(255, 166, 0);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;  
+  }  
+
     </style>
 </head>
 <body>
-    《元宇宙創新商圈實務—線上線下跨域整合實作》工作坊
+    <br>
+    元宇宙學程實戰
+    <br>
+    <button id="openMapButton" onclick="goPage()">開啟地圖</button>
+    <div id="imgDiv">
+        <img src="./images/centerImage.jpg" alt="示例圖片">
+    </div>
+    
+<script>
+    // 宣告變數
+let name = "Alice"; // 可以更改
+const age = 25;     // 不可更改
+var city = "Taipei"; // 可更改 (舊方式)
+
+name="Jack"
+// 顯示在控制台
+console.log("Name:", name);
+console.log("Age:", age);
+console.log("City:", city);
+
+name="May"
+console.log("Name:", name);
+
+greet("Mary");
+greet("name");
+greet("Jerrmy");
+
+function greet(who) {
+console.log("HI," + who + "! ")
+}
+function goPage(){
+    console.log("goPage")
+window.location.href = "https://www.google.com/maps/place/%E5%8F%B0%E7%81%A3/@23.3963457,114.2052699,6z/data=!3m1!4b1!4m6!3m5!1s0x346ef3065c07572f:0xe711f004bf9c5469!8m2!3d23.69781!4d120.960515!16zL20vMDZmMzI?entry=ttu&g_ep=EgoyMDI1MDEwNy4wIKXMDSoASAFQAw%3D%3D";
+}
+
+
+
+</script>
+
 </body>
 </html>
 
